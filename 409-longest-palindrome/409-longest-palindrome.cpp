@@ -22,8 +22,6 @@ public:
                 map1[s[i]]=1;
             }   
         }
-        
-        
         return ans;
         
     }

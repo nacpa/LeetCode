@@ -9,7 +9,7 @@ public:
                 if(profit<prices[sell]-prices[buy]){
                     profit=prices[sell]-prices[buy]; 
                 }
-                sell++;
+                sell++  ;
             }else{
                 buy=sell;
                 sell++;

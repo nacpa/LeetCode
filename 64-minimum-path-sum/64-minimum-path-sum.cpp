@@ -6,12 +6,9 @@ public:
     if(dp[i][j]!= -1) return dp[i][j];
     int left=grid[i][j] +func(i,j-1,grid,dp);
     int up=grid[i][j] +func(i-1,j,grid,dp);
-    
     return dp[i][j]= min(left,up);
     
 }
-    
-    
     int minPathSum(vector<vector<int>>& grid) {
          int n=grid.size();
     int m=grid[0].size();

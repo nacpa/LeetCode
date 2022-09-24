@@ -7,8 +7,8 @@ public:
     int down=  func(i+1,j,mat,dp);
     int leftD=  func(i+1,j-1,mat,dp);
     int rightD=  func(i+1,j+1,mat,dp);
-        dp[i][j]=mat[i][j]+ min(leftD,min(down,rightD));
-    return dp[i][j];
+       return dp[i][j]=mat[i][j]+ min(leftD,min(down,rightD));
+    
     
 }
     int minFallingPathSum(vector<vector<int>>& mat) {

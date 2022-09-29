@@ -8,7 +8,6 @@ public:
     if(dp[ind][j1][j2] != -1){
         return dp[ind][j1][j2];
     }
-    
     if(ind == m - 1){
         if(j1 == j2){
             return grid[ind][j1];
@@ -16,7 +15,6 @@ public:
             return grid[ind][j1] + grid[ind][j2];
         }
     }
-    
     int maxx = -1e8;
     for(int i = -1;i <= +1;i++){
         for(int j = -1;j <= +1;j++){
@@ -32,14 +30,12 @@ public:
     }
     return dp[ind][j1][j2] = maxx;
 }
-    
     int cherryPickup(vector<vector<int>>& grid) {
         int r=grid.size();
         int c=grid[0].size();
         
     int n = grid.size();
     vector<vector<vector<int>>> dp(r+1,vector<vector<int>>(c+1,vector<int>(c+1,-1)));
-    return func(0,0,c-1,c,r,grid,dp);
-        
+    return func(0,0,c-1,c,r,grid,dp);   
     }
 };

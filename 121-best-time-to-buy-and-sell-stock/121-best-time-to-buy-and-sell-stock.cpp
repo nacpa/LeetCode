@@ -15,7 +15,7 @@ public:
                 sell++;
             } 
         }
-        return profit;
+        return profit; 
         
     }
 };

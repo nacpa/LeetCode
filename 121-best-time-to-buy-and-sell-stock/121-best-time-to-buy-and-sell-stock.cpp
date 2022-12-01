@@ -7,7 +7,7 @@ public:
         for (int i=0;i<prices.size()-1;i++){
             if(prices[buy]<prices[sell]){
                 if(profit<prices[sell]-prices[buy]){
-                    profit=prices[sell]-prices[buy]; 
+                    profit=prices[sell]-prices[buy];  
                 }
                 sell++  ;
             }else{

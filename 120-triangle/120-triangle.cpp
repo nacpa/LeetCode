@@ -5,7 +5,7 @@ public:
     if(dp[i][j]!=-1) return dp[i][j];
     int dia = tri[i][j] +func(i+1,j+1,tri,n,dp);
     int down =tri[i][j]+func(i+1,j,tri,n,dp);
-    return dp[i][j]= min(dia,down);
+    return dp[i][j]= min(dia,down); 
     
     
 }

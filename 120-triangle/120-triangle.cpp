@@ -15,5 +15,5 @@ public:
         vector<vector<int>> dp(n,vector<int>(n,-1));
         return func(0,0,tri,n,dp);
         
-    }
+    } 
 };

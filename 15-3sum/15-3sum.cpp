@@ -14,7 +14,7 @@ public:
                     while(start < nums.size() && nums[start]==nums[start-1]) start++;
                     while(end >=0 && nums[end]==nums[end+1]) end--;
                 }
-                else if((nums[i]+nums[start]+nums[end])<0) start++;
+                else if((nums[i]+nums[start]+nums[end] )<0) start++;
                 else if((nums[i]+nums[start]+nums[end])>0) end--;
             }
         }
